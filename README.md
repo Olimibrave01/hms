@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# 🏢 Smart Hostel Management System
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, mobile-first hostel management solution built with Expo and React Native. Streamline your hostel operations with an intuitive interface and powerful features.
 
-## Get started
+![Hostel Management System]
 
-1. Install dependencies
+## ✨ Features
 
+### 👥 For Administrators
+- **Dashboard Analytics**: Real-time insights into occupancy rates, revenue, and pending payments
+- **Room Management**: Easily manage room assignments, maintenance, and availability
+- **Student Records**: Comprehensive student database with quick search and filters
+- **Payment Tracking**: Process payments and generate professional receipts instantly
+- **Booking Management**: Handle room bookings and check-ins efficiently
+
+### 🎓 For Students
+- **Room Booking**: Browse and book available rooms seamlessly
+- **Digital Payments**: Secure payment processing with instant receipts
+- **Profile Management**: Update personal information and view booking history
+- **Real-time Notifications**: Stay updated about payments, maintenance, and announcements
+
+## 🚀 Tech Stack
+
+- **Frontend**: React Native + Expo
+- **Backend**: Supabase
+- **Authentication**: Supabase Auth
+- **Database**: PostgreSQL (via Supabase)
+- **File Storage**: Supabase Storage
+- **Notifications**: Expo Notifications
+
+## 🛠️ Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Olimibrave01/hostel-management.git
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Configure environment variables:
    ```bash
-    npx expo start
+   cp .env.example .env.local
+   ```
+   Add your Supabase credentials to `.env.local`
+
+4. Start the development server:
+   ```bash
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## 📱 Development
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- iOS: `i` - requires XCode
+- Android: `a` - requires Android Studio
+- Web: `w` - opens in your default browser
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🔐 Environment Variables
 
-## Get a fresh project
+Create a `.env.local` file with the following:
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```env
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## 📄 License
 
-To learn more about developing your project with Expo, look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🙏 Acknowledgments
 
-## Join the community
+- [Expo](https://expo.dev) for the amazing development platform
+- [Supabase](https://supabase.com) for the powerful backend services
+- [React Navigation](https://reactnavigation.org) for seamless navigation
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+Made with ❤️ by [Brave Olimi]
